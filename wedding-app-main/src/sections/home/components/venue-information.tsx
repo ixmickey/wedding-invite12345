@@ -18,10 +18,10 @@ export const VenueInformation = ({ venue }: VenueInformationProps) => {
    threshold: 0.2,
  });
 
- // <<< Added blank line here to satisfy ESLint rule
  // --- 2. Get Search Params ---
  const searchParams = useSearchParams();
  const inviteesParam = searchParams.get('invitees');
+
  // Default to 1 if param is missing, not a number, or less than 1
  const inviteesCount = parseInt(inviteesParam || '1', 10);
  const validInviteesCount = isNaN(inviteesCount) || inviteesCount < 1 ? 1 : inviteesCount;
