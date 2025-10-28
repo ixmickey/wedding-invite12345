@@ -18,6 +18,7 @@ export const VenueInformation = ({ venue }: VenueInformationProps) => {
    threshold: 0.2,
  });
 
+ 
  // --- 2. Get Search Params ---
  const searchParams = useSearchParams();
  const inviteesParam = searchParams.get('invitees');
