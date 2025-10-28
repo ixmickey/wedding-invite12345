@@ -17,7 +17,8 @@ export const VenueInformation = ({ venue }: VenueInformationProps) => {
    triggerOnce: true,
    threshold: 0.2,
  });
- // --- Removed blank line here ---
+
+ // <<< Added blank line here to satisfy ESLint rule
  // --- 2. Get Search Params ---
  const searchParams = useSearchParams();
  const inviteesParam = searchParams.get('invitees');
