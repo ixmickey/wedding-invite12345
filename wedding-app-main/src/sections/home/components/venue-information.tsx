@@ -14,13 +14,13 @@ interface VenueInformationProps {
 export const VenueInformation = ({ venue }: VenueInformationProps) => {
   const { t } = useTranslation('home');
   const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.2,
-  });
-
-  // --- 2. Get Search Params ---
-  const searchParams = useSearchParams();
-  const inviteesParam = searchParams.get('invitees');
+   triggerOnce: true,
+     threshold: 0.2,
+   });
++
+   // --- 2. Get Search Params ---
+   const searchParams = useSearchParams();
+   const inviteesParam = searchParams.get('invitees');
   // Default to 1 if param is missing, not a number, or less than 1
   const inviteesCount = parseInt(inviteesParam || '1', 10);
   const validInviteesCount = isNaN(inviteesCount) || inviteesCount < 1 ? 1 : inviteesCount;
