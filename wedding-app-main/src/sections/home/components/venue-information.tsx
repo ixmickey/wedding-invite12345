@@ -65,7 +65,7 @@ export const VenueInformation = ({ venue }: VenueInformationProps) => {
 
             {/* --- Adjusted space-y --- */}
             <div className="space-y-4"> {/* Reduced space-y slightly */}
-            {/* --- END --- */}
+              {/* --- END --- */}
               <div className="text-center">
                 <h4 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800 mb-2">
                   {venue.ceremony.name}
@@ -78,24 +78,23 @@ export const VenueInformation = ({ venue }: VenueInformationProps) => {
               {/* --- 3. Added Invitees Count Display --- */}
               <div className="text-center">
                 <p className="font-medium text-gray-800 text-sm sm:text-base">
-                    Invitees
+                  Invitees
                 </p>
                 <p className="text-purple-600 font-semibold text-sm sm:text-base">
-                    ({validInviteesCount})
+                  ({validInviteesCount})
                 </p>
               </div>
               {/* --- END --- */}
 
               {/* Time Box */}
               <div className="inline-block bg-white/60 rounded-lg px-4 py-2 shadow-sm text-center w-full"> {/* Made block and centered text */}
-                  <p className="font-medium text-gray-800 text-sm sm:text-base"> {/* Added label */}
-                      {t('details.time')}
-                  </p>
-                  <p className="text-purple-700 font-semibold text-sm sm:text-base"> {/* Changed font weight */}
-                      {venue.ceremony.time}
-                  </p>
+                <p className="font-medium text-gray-800 text-sm sm:text-base"> {/* Added label */}
+                  {t('details.time')}
+                </p>
+                <p className="text-purple-700 font-semibold text-sm sm:text-base"> {/* Changed font weight */}
+                  {venue.ceremony.time}
+                </p>
               </div>
-
 
               <div className="bg-white/50 rounded-2xl p-6 space-y-4">
                 <h5 className="font-semibold text-gray-800 mb-3 text-sm sm:text-base">
@@ -129,7 +128,7 @@ export const VenueInformation = ({ venue }: VenueInformationProps) => {
           className="mt-16 text-center"
         >
           {/* ... rest of the transportation section ... */}
-           <div className="bg-gradient-to-r from-rose-50 to-pink-50 rounded-2xl p-8 max-w-3xl mx-auto border border-rose-100">
+          <div className="bg-gradient-to-r from-rose-50 to-pink-50 rounded-2xl p-8 max-w-3xl mx-auto border border-rose-100">
             <h4 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800 mb-4 flex items-center justify-center">
               <span className="mr-2">🚐</span>
               {t('venue.transportation')}
@@ -138,7 +137,7 @@ export const VenueInformation = ({ venue }: VenueInformationProps) => {
               {t('venue.shuttle-service')}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-gray-600">
-            <div className="bg-white/50 rounded-lg p-4">
+              <div className="bg-white/50 rounded-lg p-4">
                 <p className="font-medium">Directions:</p>
                 <p>Use any map application to find the venue easily.</p>
                 <p>Click &quot;View on Map&quot; above.</p>
