@@ -17,8 +17,7 @@ export const VenueInformation = ({ venue }: VenueInformationProps) => {
    triggerOnce: true,
    threshold: 0.2,
  });
-
- // <<< Ensure there is exactly one blank line above this comment
+ // --- Removed blank line here ---
  // --- 2. Get Search Params ---
  const searchParams = useSearchParams();
  const inviteesParam = searchParams.get('invitees');
