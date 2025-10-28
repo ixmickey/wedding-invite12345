@@ -39,13 +39,12 @@ export const HeroSection = ({
             transition={{ duration: 1, delay: 0.2 }} // First animation
             className="mb-8 sm:mb-10" // Added more margin-bottom
           >
-             {/* Blessing text replaces the heading */}
-             <p className="text-sm sm:text-base md:text-lg text-gray-700 italic leading-relaxed"> {/* Adjusted text size/color */}
--              By the grace of Allah Ta'ala, Vasila e Panjetan Pak (AS),<br />
-+              By the grace of Allah Ta&apos;ala, Vasila e Panjetan Pak (AS),<br />
-               Divine benedictions of Al-Hayyul Muqaddas<br />
-               Dr. Syedna Mohammed Burhanuddin (RA), and<br />
-               Dr. Syedna Aali Qadr Mufaddal Saifuddin (TUS)
+            {/* Blessing text replaces the heading */}
+            <p className="text-sm sm:text-base md:text-lg text-gray-700 italic leading-relaxed"> {/* Adjusted text size/color */}
+              By the grace of Allah Ta&apos;ala, Vasila e Panjetan Pak (AS),<br />
+              Divine benedictions of Al-Hayyul Muqaddas<br />
+              Dr. Syedna Mohammed Burhanuddin (RA), and<br />
+              Dr. Syedna Aali Qadr Mufaddal Saifuddin (TUS)
             </p>
             {/* Removed the original H1 and the horizontal line div */}
           </motion.div>
@@ -76,7 +75,7 @@ export const HeroSection = ({
               </div>
               {/* BRIDE Name */}
               <div className="text-center flex-shrink-0">
-                 <div className="px-1">
+                <div className="px-1">
                   <h3
                     className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-serif text-gray-800 break-words hyphens-auto leading-tight"
                     title={couple.bride.fullName}
