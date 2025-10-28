@@ -75,7 +75,7 @@ export const HeroSection = ({
               </div>
               {/* BRIDE Name */}
               <div className="text-center flex-shrink-0">
-                <div className="px-1">
+                 <div className="px-1">
                   <h3
                     className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-serif text-gray-800 break-words hyphens-auto leading-tight"
                     title={couple.bride.fullName}
